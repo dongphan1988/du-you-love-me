@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="position: absolute; top: 250px; left: 150px">du yo lop me</h1>
+<button type="button" onclick="yes()" style="position: absolute; top: 320px; left: 120px">ok anh</button>
+<input type="button" id="dont" value="NO" onmouseover="noHover()" style="position: absolute; top: 320px; left: 250px"/>
+<script>
+    function yes() {
+        alert("happy");
+    }
+    function noHover() {
+        let a = Math.round(Math.random()*window.innerWidth);
+        let b = Math.round(Math.random()*window.innerHeight);
+        document.getElementById("dont").style.top = a+ 'px';
+        document.getElementById("dont").style.left = b + 'px';
+    }
+</script>
+</body>
+</html>
